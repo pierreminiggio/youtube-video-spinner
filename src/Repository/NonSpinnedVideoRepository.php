@@ -22,7 +22,8 @@ class NonSpinnedVideoRepository
         );
         $spinnedContentIds = array_map(fn ($entry) => (int) $entry['id'], $spinnedContentIds);
 
-        $isElonChannel = $youtubeChannelId === 'UCCh4AtUCAhIbmOZbAbB-AhA';
+        $elonChannelId = 3;
+        $isElonChannel = $youtubeChannelId === $elonChannelId;
         if ($isElonChannel) {
             // Elon Musk Addict' Shorts are posted from TikTok to Youtube.
             // So we don't need to spin them again to TikTok
