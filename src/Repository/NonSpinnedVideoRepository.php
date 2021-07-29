@@ -35,7 +35,7 @@ class NonSpinnedVideoRepository
                     'id'
                 )->where(
                     'channel_id = :channel_id
-                    AND description like \'%Shorts%\''
+                    AND description like \'%#Shorts%\''
                 ),
                 ['channel_id' => $youtubeChannelId]
             );
